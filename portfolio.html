@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio</title>
+    <meta charset="utf-8"/>
+    <meta name="application-name" content="width=device,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>    
+<body>
+    <!--navbar-->
+            <div class="container">
+
+            <div id="navbar">
+
+                <a href="index.html">Home</a>
+                <a href="aboutme.html">About me</a>
+                <a class="current" href=#>Portfolio</a>
+                <a href="contact.html">Contact</a>
+
+                </div>
+    <!--title of the page-->
+                <div class="description">
+                <h1 class ="wavey"> Portfolio </h1>
+                    <script src="sketch.js"></script>
+    <!--text on page-->
+                    <p> Here are some examples of projects that I have worked on. </p>
+    <!--image on the window-->
+                    <div class="window"><img src="assets/pic1.jpg" alt="crypto"></div>
+                        <ul class="pane">
+<!--small pictures below the window-->
+                        <li><p>P5.js</p><a href="assets/pic1.jpg" target="window"><img src="assets/pic1.jpg" width="120px"></a></li>
+                        <li><p>Game Project</p><a href="assets/pic2.jpg" target="window"><img src="assets/pic2.jpg" width="120px"></a></li>
+                        <li><p>Presenation</p><a href="assets/pic3.jpg" target="window"><img src="assets/pic3.jpg" width="120px"></a></li>
+                        <li><p>Wireframes</p><a href="assets/pic4.jpg" target="window"><img src="assets/pic4.jpg" width="120px"></a></li>
+                        <li><p>HTML and CSS</p><a href="assets/pic5.jpg" target="window"><img src="assets/pic5.jpg" width="120px"></a></li>
+                        </ul>
+<!--code for gallery when image is clicked on from the bottom will be displayed-->
+                    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+                    <script type="text/javascript">
+                        $(document).ready(function(){
+                            $('.pane a').click(function(e){
+                                e.preventDefault();
+                                    $('.window img').attr("src", $(this).attr("href"));
+                            })
+                        })
+                    </script>
+                </div>
+
+            </div>
+</body>
+</html>

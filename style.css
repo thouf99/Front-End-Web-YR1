@@ -1,0 +1,197 @@
+/*<!DOCTYPE css>*/
+/*body fonts*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif, monospace;
+}
+
+.picture {
+  width: 1000px;
+  margin: 50px auto 20px;
+}
+/*Gallery box*/
+
+.window {
+  width: 700px;
+  margin: 50px auto 20px;
+}
+.window img {
+  width: 100%;
+  border: 4px solid #fff;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+}
+
+/*navbar Background*/
+
+#navbar {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  transition: top 0.8s;
+}
+
+/*navbar text decoration*/
+
+#navbar a {
+  float: centre;
+  display: inline-block;
+  color: firebrick;
+  text-decoration: none;
+  margin: 20px 30px;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+/*When hovering over the nav bar*/
+
+#navbar a:hover {
+  background-color: #ddd;
+  font-family: cursive;
+  color: red;
+}
+
+/*When current page is active*/
+
+#navbar .current {
+  background-color: red;
+  color: white;
+}
+
+/*title of home page*/
+h1 {
+  font-family: fantasy;
+  box-sizing: border-box;
+  font-weight: bold;
+  text-align: center;
+  font-size: 50px;
+  line-height: 15vh;
+}
+
+/*Animation*/
+span {
+  opacity: 0;
+  transition: all 2s ease;
+  transform: translateY(50px);
+  display: center;
+}
+span.fade {
+  opacity: 0.75;
+  transform: translateY(50px);
+}
+
+.description {
+  margin: 120px 150px;
+  text-align: justify;
+}
+
+/*image size*/
+.pane {
+  width: 100%;
+  margin-top: 40px;
+}
+
+/*grid of pictures*/
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+}
+
+.column img {
+  margin-top: 15px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/*text colour*/
+p {
+  text-align: center;
+  color: darkorchid;
+  font-size: 30px;
+}
+
+/*image gallery*/
+ul.pane {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul.pane li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+ul.pane li img {
+  border: 4px solid #fff;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+}
+
+/*text underneath each small image*/
+ul.pane p {
+  text-align: center;
+  font-family: serif;
+  color: darkcyan;
+  font-size: 20px;
+}
+
+/*contact form*/
+.contact-form {
+  width: 85%;
+  max-width: 650px;
+  background: #f1f1f1;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  padding: 30px 40px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 20px #000000b3;
+  font-family: "Montserrat", sans-serif;
+}
+
+.sometext {
+  border: 1px solid gray;
+  margin: 8px 0;
+  padding: 12px 18px;
+  border-radius: 8px;
+}
+
+.sometext label {
+  display: block;
+  text-align: left;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.sometext input,
+.sometext textarea {
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 18px;
+  margin-top: 6px;
+}
+
+/*send button*/
+.sendButton {
+  display: block;
+  background: #9b59b6;
+  padding: 14px 0;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 8px;
+  width: 100%;
+}
